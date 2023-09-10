@@ -12,7 +12,6 @@ export const App = () => {
     const savedContacts = localStorage.getItem('contacts');
     if (savedContacts !== null) {
       setContacts(JSON.parse(savedContacts));
-      console.log(savedContacts);
     }
   }, []);
 
